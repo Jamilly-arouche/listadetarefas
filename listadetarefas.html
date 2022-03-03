@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Minhas tarefas diarias</title>
+    </head>
+    <body>
+    </h1> Tarefas </h1>
+    <ul>
+        <li>Estudar html</li>
+        <li>Estudar css</li>
+        <li>Estuda JS</li>
+    </ul>
+    <input>
+    <button onclick="jk()">adicionar</button>
+    <script>
+        function jk(){
+            const ul = document.querySelector("ul")
+            const input = document.querySelector("input")
+            console.log (input)
+            const tarefa = input.value
+            console.log(tarefa)
+
+            const li = document.createElement("li")
+            li.innerText= tarefa
+            ul.appendChild(li)
+
+            input.value = ""
+        }
+    </script>
+    </body>
+</html>
